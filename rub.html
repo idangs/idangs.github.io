@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+
+        .parallax {
+            /* The image used */
+            background-image: url("/Users/aayushi/Desktop/b.jpg");
+            opacity: 1;
+
+
+
+            /* Set a specific height */
+            height: 2600px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: color-dodge;
+}
+            .portrait{
+            border-radius: 30%;
+            border-color: rgb(254,255,213);
+            width: 15%;
+            border-width: 5px;
+            border-style: solid;
+            position: absolute;
+            top: 40px;
+            left:600px;
+            z-index: 4;
+            align: center;
+          }
+
+
+
+
+            .orange-img{
+              width: 1425px;
+              height: 700px;
+              position: absolute;
+              z-index: 2;
+              opacity: 0.8;
+
+            }
+
+            .white-space{
+              background-color: rgb(254,250,213);
+              position: absolute;
+              top:140px;
+              left: 200px;
+              width:70%;
+              height:550px;
+              z-index: 3;
+              border-top: 0px;
+              border-left: 15px;
+              border-right: 5px;
+              border-bottom: 5px;
+              border-style: solid;
+              border-color: rgb(37,172,208);
+              webkit-align-items: center;
+              font-family: "Space Mono", monospace, sans-serif;
+              text-align: center;
+              font-size: 24px;
+              opacity: 0.9;
+
+            }
+
+            .orange{
+              color: rgb(239, 75, 9);
+            }
+
+
+
+            #space{
+              float: right;
+              padding-top: 25px;
+              font-weight: bold;
+
+              font-family: "Space Mono", monospace, sans-serif;
+              font-size: 24px;
+              padding-right: 5px;
+              padding-left: 5px;
+            }
+
+            #ace{
+              float: left;
+                padding-left: 425px;
+
+            }
+
+            #pace{
+              float: right;
+                padding-right: 395px;
+
+            }
+
+
+            a.white{
+              color: rgb(255,255,255);
+              text-decoration: none;
+            }
+
+            .intro-page{
+              background-color: rgb(0,77,141);
+              width:100%;
+              opacity: 0.9;
+
+            }
+
+            .back-img{
+              width: 1425px;
+              height: 1600px;
+              z-index:1
+
+            }
+
+            .yack-img{
+              width: 1425px;
+              height: 900px;
+              opacity: 0.7;
+
+            }
+
+            .content1{
+              background-color: rgb(254,250,213);;
+              position: absolute;
+              top:1000px;
+              left: 110px;
+              width:85%;
+              height:690px;
+              border-top: 0px;
+              border-left: 15px;
+              border-right: 5px;
+              border-bottom: 5px;
+              border-style: solid;
+              border-color: rgb(37,172,208);
+              z-index: 5;
+              opacity: 0.9;
+
+
+
+            }
+
+            body{
+              margin: 0;
+            }
+
+            .content2{
+              background-color: rgb(254,250,213);
+              position: absolute;
+              top:1900px;
+              left: 110px;
+              width:85%;
+              height:690px;
+              border-top: 0px;
+              border-left: 15px;
+              border-right: 5px;
+              border-bottom: 5px;
+              border-style: solid;
+              border-color: rgb(37,172,208);
+              opacity: 0.9;
+
+            }
+
+            h3{
+              font-family: "Space Mono", monospace, sans-serif;
+              text-align: center;
+              font-size: 24px;
+              font-weight: normal;
+            }
+
+            h2{
+              font-family: "Space Mono", monospace, sans-serif;
+              text-align: left;
+              font-size: 24px;
+              font-weight: bold;
+              padding-left: 100px;
+              border-top: 0px;
+              border-left: 0px;
+              border-right: 0px;
+              border-bottom: 5px;
+              border-style: solid;
+              margin-left: 20px;
+            }
+
+            p{
+
+              font-family: "Space Mono", monospace, sans-serif;
+              font-size: 16px;
+              padding-left: 100px;
+              line-height: 1.6;
+              text-align: justify;
+
+
+
+
+
+
+            }
+
+            .projects{
+              background-color: rgb(255, 204, 153);
+              padding-right: 20px;
+              margin-left: 100px;
+              padding-top: 2px;
+
+            }
+
+            #about{
+              text-align: left;
+              font-family: "Space Mono", monospace, sans-serif;
+              font-size: 44px;
+              padding-top: 30px;
+              padding-left: 100px;
+            }
+
+            #painting{
+              width: 40%;
+              border-width: 0px;
+              float:left;
+
+              padding-right: 23px;
+              padding-top: 13px;
+            }
+
+            #interests{
+              text-align: left;
+              font-family: "Space Mono", monospace, sans-serif;
+              font-size: 44px;
+              padding-top: 30px;
+              padding-left: 100px;
+            }
+
+            .doodle-para{
+              float:left;
+              width:45%
+
+
+            }
+
+            .violet{
+              color: rgb(96, 56, 175);
+              animation: myfirst 5s infinite;
+              animation-direction: alternate-reverse;
+            }
+
+            @keyframes myfirst {
+                0%   {background: pink; left: 0px; top: 0px;}
+                25%  {background: yellow; left: 200px; top: 0px;}
+                50%  {background: pink; left: 200px; top: 200px;}
+                75%  {background: yellow; left: 0px; top: 200px;}
+                100% {background: pink; left: 0px; top: 0px;}
+}
+
+              .violet1{
+                color: rgb(96, 56, 175);
+
+    }
+
+
+
+            ul{
+              text-align: left;
+              font-family: "Space Mono", monospace, sans-serif;
+              font-size: 16px;
+              padding-top: 5px;
+              padding-bottom: 20px;
+              padding-left: 40px;
+              text-align: justify;
+
+            }
+
+
+            .contact-box{
+              background-color: rgb(255, 255, 255);
+              position: relative;
+              width: 35%
+              top:2000px;
+              left: 50px;
+              height:390px;
+              border-top: 0px;
+              border-left: 15px;
+              border-right: 5px;
+              border-bottom: 5px;
+              border-style: solid;
+              border-color: rgb(37,172,208);
+              opacity: 0.9;
+            }
+
+            #image{
+              width: 40px;
+            }
+
+            hr {
+              display: block;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+              margin-left: 45px;
+              margin-right: 65px;
+              border-style: inset;
+              border-width: 1px;
+          }
+
+          .zoom {
+              transition: transform .2s; /* Animation */
+              padding-right:50px;
+              margin: 10;
+              }
+
+            .zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+              .bye{
+                background-color: rgb(0,77,141);
+                width:100%;
+                opacity: 0.9;
+                height: 40%;
+                text-align: center;
+                font-family: "Space Mono", monospace, sans-serif;
+                font-size: 24px;
+                padding-top: 80px;
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+      <div class = "intro-page">
+        <span id = "spa">
+        <span id = "space">
+      <div class="zoom"><a href="mailto:adangol1@swarthmore.edu" class = "white">CONTACT</a></div>
+          </span>
+
+          <span id = "space">
+          <div class="zoom"><a href="#interests" class = "white">INTERESTS</a></div>
+            </span>
+
+
+        <span id = "space">
+          <div class="zoom"><a href="#about" class = "white">ABOUT ME</a> </div>
+          </span>
+
+
+
+
+
+
+
+          </span>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div class ="white-space">
+          <br><br><br><br><br><br><br><br>
+          <h3><strong> Hi! I'm  <strong class = "violet1"> Aayushi.</strong> Student, programmer and social entrepreneur.</strong></h3> <br>
+            Continue scrolling to know more about me.
+            <br><br>
+            <hr>
+            <br>
+            <span id = "ace">
+              <div class="zoom"><a href="https://github.com/idangs"><img src = "/Users/aayushi/Desktop/GitHub-Mark-120px-plus.png" id="image"></a></div></span>
+            <span id = "pace"><div class="zoom"> <a href="https://linkedin.com/in/aayushi-dangol"><img src="/Users/aayushi/Desktop/In-Black-128px-R.png" id="image"></a></div></span>
+
+          </p>
+         </div>
+        <img src="/Users/aayushi/Downloads/20770262_1732477630114604_5579217096857587829_n.jpg" alt = "portrait" class = "portrait">
+      </div>
+<div class = "parallax">
+      <div class = "about-page">
+
+        <div class = "content1">
+          <br>
+          <div id = "about"><strong>About Me</strong></div>
+          <br>
+          <br>
+          <div class = "doodle-para">
+            <div class = "words">
+            <p>Growing up, I used to <strong class = "orange"> doodle </strong> on the walls of my room - trees, sticks, people,flowers.
+              The same was conquered in countless pages of my notebooks. <br><br>So when my school introduced
+a course called <strong class = "orange">“Computing and Designing”</strong>, I eagerly signed up for it, thinking it was a graphic
+designing class. Imagine my disappointment when the teacher told me the closest I would come
+to designing would be creating a circle in QBASIC. <br><br>To my surprise, I really enjoyed that class. As
+coding required fresh thinking, imagination and the willingness to experiment, it felt like an art
+class that required problem solving. That's how I was first <strong class = "orange">introduced</strong> to computer science</p>
+</div>
+</div>
+<div class = "doodle-para">
+  <p><strong class = "orange">Programming</strong> and <strong class = "orange">painting</strong> continue to be an integral part of my life.
+    <img id = "painting" src="/Users/aayushi/Desktop/y00UzUDJRuuGfWZv7HZd9g_thumb_8f8.jpg" alt="real picture">At Swarthmore Collge, I am pursuing a
+    double major in Computer Science and Studio Arts.<br><br>
+    My <a href= "#art"> art portfolio</a> mainly consits of oil and acrylic paintings on canvas.
+    <br><br><br>
+    I am also and active member of <strong class = "orange">Women in Computer Science</strong> at Swarthmore College,
+    where along with gaining exposure to tech, I am also fostering a supportive environment for women passionate about Computer Science.</p>
+  </div>
+          </div>
+        </div>
+      </div>
+
+        <div>
+          <div class = "content2">
+            <br>
+            <div id = "interests"><strong>Interests</strong>
+            <div class="heart"></div>
+          </div>
+            <br>
+            <div class = "doodle-para">
+              <div class = "words">
+            <p> I love building things. While challenging engineering and math problems are fun to tackle, I'm most interested in binding my
+              computer science knowledge with social justice, so that I can create products that can
+connect human needs to help organizations and people.
+<br><br>
+As a <a href="https://www.swarthmore.edu/news-events/new-class-lang-opportunity-scholars-announced-2020">Lang Oppurtunity Scholar</a>, I created a web platform that connects at-risk women with their potential employers for expediting employment creation.
+<br><br>Through my Lang Project, in partnership with <a href="http://www.himalayanclimate.org">Himlayan Climate Initiative,</a> we also also ran different trainings for the young and less-educated women in order to
+provide them livelihood opportunities within Nepal.</br>
+            </div>
+          </div>
+          <div class = "doodle-para">
+<p>I'm <strong class = "violet">looking for oppurtunities</strong> where I can work with collaborative teams to gain experience in writing well documented and efficient
+code. I am also interested in project management and development roles.</p>
+<br>
+
+
+<div class = "projects">
+
+<h2>Recent Projects </h2>
+<ul>
+  <li>Topic Modelling and Data Visualization of Nepali tweets in Python. Built libraries to filter Nepali stop words and raw data.</li><br>
+    <li>Motion capture, procedural animation and Key-framing. Implemented algorithms in C++ as well as derived my own unique animations. </li><br>
+    <li>Coordinated and lead through each phase of Winrock International's job portal project designed for Nepal's construction idustry.
+    </ul>
+  </div>
+  </div>
+</div>
+
+<div class="bye">
+  <div class="zoom"><a href="#spa" class = "white">Home</a></div>
+  <br><br>
+</div>
+
+
+
+  </div>
+
+    </body>
+</html>
